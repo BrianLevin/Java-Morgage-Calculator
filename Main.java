@@ -15,6 +15,10 @@ public class Main {  // main object which will hold all the methods
         float annualInterest = scanner.nextFloat(); // scan the anual interest which will come out as a decimal number
         float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR; // calculation to get the montly interest
 
+        System.out.print("Period (Years): "); // print out the Period in years
+        byte years = scanner.nextByte(); //  years will be scanned as a byte
+        int numberOfPayments = years * MONTHS_IN_YEAR; // number of payments will be stored as a integer
+
     }
 
 }
