@@ -13,8 +13,13 @@ public class Main {  // main object class  which will hold all the methods
 
         Scanner scanner = new Scanner(System.in); // scanner obtains  the input data  of primitive types and strings new creates a new instance
 
+       while (true) { // while loop to determine if input values match
         System.out.print("Principal: "); // Print out the principle
-        int principal = scanner.nextInt(); // scan the principle as an integer which is a 32 bit number
+        principal = scanner.nextInt(); // scan the principle as an integer which is a 32 bit number
+         if (principal >= 1000 && principal <= 1_000_000) // condition for loan for method to proceed
+                break;
+            System.out.println("Enter a value between 1000 and 1000000"); // message will printed on screen if values are incorrect
+        }
 
         System.out.print("Annual Interest Rate: "); // print out the annual interest
         float annualInterest = scanner.nextFloat(); // scan the anual interest which will come out as a decimal number
