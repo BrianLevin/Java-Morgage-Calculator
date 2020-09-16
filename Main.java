@@ -1,3 +1,5 @@
+import java.text.NumberFormat; // java class for formatting and parsing numbers
+import java.util.Scanner; // java class for for reading input with the keyboard
 
 public class Main {  // main object class  which will hold all the methods
 
