@@ -6,6 +6,9 @@ public class Main {  // main object which will hold all the methods
         final byte PERCENT = 100;
 
 
+        Scanner scanner = new Scanner(System.in); // scanner obtains  the input data  of primitive types and strings new creates a new instance
+
+
     }
 
 }
