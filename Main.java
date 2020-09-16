@@ -6,7 +6,10 @@ public class Main {  // main object class  which will hold all the methods
     public static void main(String[] args) { // The main method which where the program starts Public= Global Access, Static= invoked without isntating class to save memory, Void= Doesnt return anything once program terminates , main: main method starting point that JVM looks for, String args, stores java command line arguments as strings and args are not fixed and can use an name in place of it.
         final byte MONTHS_IN_YEAR = 12; // byte= 8 bit storgae  final= constant
         final byte PERCENT = 100;
-
+        
+        int principal = 0; // Set intial values to zero
+        float monthlyInterest = 0;
+        int numberOfPayments = 0;
 
         Scanner scanner = new Scanner(System.in); // scanner obtains  the input data  of primitive types and strings new creates a new instance
 
