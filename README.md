@@ -3,20 +3,18 @@
 
 ## Description
 
-The Java Morgage Calculator is a simple application that allows the user  to calculate their mortgage based off of the data they put in. The mortgage is calculated based off of the principle or the loan the user wants, the  annual interests rate of the loan, and the period in years the loan will be paid off.  The mortgage is then calculated as the monthly payments and displays it as a currency.
-
-## Click [here](## Description
+The Java Mortgage Calculator is a simple application that allows the user  to calculate their mortgage based off of the data they put in. The mortgage is calculated based off of the principle or the loan the user wants, the  annual interest rate of the loan, and the period in years the loan will be paid off.  The mortgage is then calculated in the monthly payments which will be paid  and then displays it as a currency.
 
 
-This application allows users to create and track their daily workouts.  The app tracks the name, type, weights, sets  reps, and duration  of the exercise and tracks the distance traveled for cardio based exercises. You can continue to add exercises on the given day or create a whole new workout. The workout is then saved for that given day.
 
-## Click [here](https://drive.google.com/file/d/1bJZZEHpAiu2r6HxI6X-KpxIrGJALdkJu/view?usp=sharing)  for the live app. 
+## Click [here](https://drive.google.com/file/d/1bJZZEHpAiu2r6HxI6X-KpxIrGJALdkJu/view?usp=sharing)  to view the app. 
+
 
 To get the output in Visual Studio Code, download the right extentions and click the play button on the top right on the screen: 
 
  ![Play Screenshot](images/Play.png)
  
- Once the Java is running and output the data, copy  the data and post it in the terminal:
+ Once the Java is running and output the data, copy  the data and paste it in the terminal:
  
  
  ![Copy Screenshot](images/Copy.png) 
