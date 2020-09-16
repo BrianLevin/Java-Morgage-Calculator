@@ -20,10 +20,16 @@ public class Main {  // main object class  which will hold all the methods
                 break;
             System.out.println("Enter a value between 1000 and 1000000"); // message will printed on screen if values are incorrect
         }
-
+        while (true){ // while loop if methid is true
         System.out.print("Annual Interest Rate: "); // print out the annual interest
         float annualInterest = scanner.nextFloat(); // scan the anual interest which will come out as a decimal number
-        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR; // calculation to get the montly interest
+        if (annualInterest >= 1 && annualInterest <= 30) { // condition to put in the float value
+         monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR; // calculation to get the montly interest
+         break; //break loop
+
+        }
+        System.out.println("Enter a value between 1 and 30"); // message will be printed if input value is incorrect
+    }
 
         System.out.print("Period (Years): "); // print out the Period in years
         byte years = scanner.nextByte(); //  years will be scanned as a byte
