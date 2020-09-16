@@ -11,6 +11,9 @@ public class Main {  // main object which will hold all the methods
         System.out.print("Principal: "); // Print out the principle
         int principal = scanner.nextInt(); // scan the principle as an integer which is a 32 bit number
 
+        System.out.print("Annual Interest Rate: "); // print out the annual interest
+        float annualInterest = scanner.nextFloat(); // scan the anual interest which will come out as a decimal number
+        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR; // calculation to get the montly interest
 
     }
 
