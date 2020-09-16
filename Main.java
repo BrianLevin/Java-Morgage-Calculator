@@ -1,7 +1,7 @@
 
-public class Main {  // main object which will hold all the methods
+public class Main {  // main object class  which will hold all the methods
 
-    public static void main(String[] args) { // Public= Global Access, Static= invoked without isntating class to save memory, Void= Doesnt return anything once program terminates , main: main method starting point that JVM looks for, String args, stores java command line arguments as strings and args are not fixed and can use an name in place of it.
+    public static void main(String[] args) { // The main method which where the program starts Public= Global Access, Static= invoked without isntating class to save memory, Void= Doesnt return anything once program terminates , main: main method starting point that JVM looks for, String args, stores java command line arguments as strings and args are not fixed and can use an name in place of it.
         final byte MONTHS_IN_YEAR = 12; // byte= 8 bit storgae  final= constant
         final byte PERCENT = 100;
 
@@ -19,9 +19,13 @@ public class Main {  // main object which will hold all the methods
         byte years = scanner.nextByte(); //  years will be scanned as a byte
         int numberOfPayments = years * MONTHS_IN_YEAR; // number of payments will be stored as a integer
 
-          double mortgage = principal
+        double mortgage = principal
                     * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
                     / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1); // morgage calculation
+
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage); // Method which willl format the morgage  as a value to be displayed
+        System.out.println("Mortgage: " + mortgageFormatted); // print the morgage on the screen
+
 
     }
 
