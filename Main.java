@@ -19,6 +19,10 @@ public class Main {  // main object which will hold all the methods
         byte years = scanner.nextByte(); //  years will be scanned as a byte
         int numberOfPayments = years * MONTHS_IN_YEAR; // number of payments will be stored as a integer
 
+          double mortgage = principal
+                    * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+                    / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1); // morgage calculation
+
     }
 
 }
