@@ -40,7 +40,7 @@ public class Main {  // main object class  which will hold all the methods
 System.out.println("Enter a value between 1 and 30."); // print if incorrect value is  inputted in
         }
 
-        double mortgage = principal
+        double mortgage = principal // double is a larger primitive data type that can hold larger floats and used to declare variables and methods
                     * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
                     / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1); // morgage calculation
 
