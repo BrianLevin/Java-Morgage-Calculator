@@ -8,6 +8,9 @@ public class Main {  // main object which will hold all the methods
 
         Scanner scanner = new Scanner(System.in); // scanner obtains  the input data  of primitive types and strings new creates a new instance
 
+        System.out.print("Principal: "); // Print out the principle
+        int principal = scanner.nextInt(); // scan the principle as an integer which is a 32 bit number
+
 
     }
 
