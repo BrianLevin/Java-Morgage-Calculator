@@ -30,10 +30,15 @@ public class Main {  // main object class  which will hold all the methods
         }
         System.out.println("Enter a value between 1 and 30"); // message will be printed if input value is incorrect
     }
-
+        while (true) {
         System.out.print("Period (Years): "); // print out the Period in years
         byte years = scanner.nextByte(); //  years will be scanned as a byte
-        int numberOfPayments = years * MONTHS_IN_YEAR; // number of payments will be stored as a integer
+        if(years >= 1 && years <= 30) { // condition for years
+         numberOfPayments = years * MONTHS_IN_YEAR; // number of payments will be stored as a integer
+          break;
+        }
+System.out.println("Enter a value between 1 and 30."); // print if incorrect value is  inputted in
+        }
 
         double mortgage = principal
                     * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
